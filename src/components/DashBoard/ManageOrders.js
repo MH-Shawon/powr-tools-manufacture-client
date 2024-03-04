@@ -4,14 +4,14 @@ const ManageOrders = () => {
   const [allOrders, setAllOrders] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:5000/all-orders")
+    fetch("https://power-tools-server.vercel.app/all-orders")
       .then((res) => res.json())
       .then((data) => setAllOrders(data));
   }, []);
 
   // handle status
   const handleStatus = (id) => {
-    fetch(`http://localhost:5000/updateStatus/${id}`, {
+    fetch(`https://power-tools-server.vercel.app/updateStatus/${id}`, {
       method: "PUT",
       headers: { "content-type": "application/json" },
     })
@@ -23,7 +23,7 @@ const ManageOrders = () => {
       });
   };
   const handleStatus1 = (id) => {
-    fetch(`http://localhost:5000/updateStatus1/${id}`, {
+    fetch(`https://power-tools-server.vercel.app/updateStatus1/${id}`, {
       method: "PUT",
       headers: { "content-type": "application/json" },
     })

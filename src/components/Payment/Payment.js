@@ -13,7 +13,7 @@ const Payment = () => {
   console.log(payment);
 
   useEffect(() => {
-    fetch(`http://localhost:5000/payment/${id}`)
+    fetch(`https://power-tools-server.vercel.app/payment/${id}`)
       .then((res) => res.json())
       .then((data) => setpayment(data));
   }, []);

@@ -8,7 +8,7 @@ const MyOrders = () => {
   const [user] = useAuthState(auth);
 
   useEffect(() => {
-    fetch(`http://localhost:5000/orders?email=${user.email}`)
+    fetch(`https://power-tools-server.vercel.app/orders?email=${user.email}`)
       .then((res) => res.json())
       .then((data) => setProducts(data));
   }, [user.email]);
@@ -19,7 +19,7 @@ const MyOrders = () => {
       "Are you sure you want to cancel your order?"
     );
     if (confirmation) {
-      fetch(`http://localhost:5000/delete-order/${id}`, {
+      fetch(`https://power-tools-server.vercel.app/delete-order/${id}`, {
         method: "DELETE",
         headers: { "content-type": "application/json" },
       })

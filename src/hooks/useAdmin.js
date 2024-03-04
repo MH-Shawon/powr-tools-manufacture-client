@@ -6,7 +6,7 @@ const useAdmin = () => {
   const [user] = useAuthState(auth);
   const [admin, setAdmin] = useState(false);
   useEffect(() => {
-    fetch(`http://localhost:5000/users/${user.email}`)
+    fetch(`https://power-tools-server.vercel.app/users/${user.email}`)
       .then((res) => res.json())
       .then((data) => setAdmin(data.admin));
   }, [user.email]);

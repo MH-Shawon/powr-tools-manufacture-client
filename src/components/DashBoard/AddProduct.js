@@ -12,7 +12,7 @@ const AddProduct = () => {
   // const history = useHistory()
 
   const onSubmit = (data) => {
-    fetch("http://localhost:5000/products", {
+    fetch("https://power-tools-server.vercel.app/products", {
       method: "POST",
       headers: { "content-type": "application/json" },
       body: JSON.stringify(data),

@@ -5,7 +5,7 @@ const ManageProducts = () => {
   const [isDelete, setIsDelete] = useState(null);
   console.log(products);
   useEffect(() => {
-    fetch("http://localhost:5000/products")
+    fetch("https://power-tools-server.vercel.app/products")
       .then((res) => res.json())
       .then((data) => setProducts(data));
   }, [isDelete]);
@@ -15,7 +15,7 @@ const ManageProducts = () => {
       "Are you sure product will be delete parmanently?"
     );
     if (confirmation) {
-      fetch(`http://localhost:5000/delete/${id}`, {
+      fetch(`https://power-tools-server.vercel.app/delete/${id}`, {
         method: "DELETE",
         headers: { "content-type": "application/json" },
       })
