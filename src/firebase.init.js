@@ -6,12 +6,12 @@ import {getAuth} from 'firebase/auth';
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyCZVBsdJndeu2q2yPaXrCJZi0o9iI4l7ac",
-  authDomain: "power-tools-92939.firebaseapp.com",
-  projectId: "power-tools-92939",
-  storageBucket: "power-tools-92939.appspot.com",
-  messagingSenderId: "458655481232",
-  appId: "1:458655481232:web:3ec14af13195d143f7c715"
+  apiKey: "AIzaSyB43ABe9-1YSPBEFX7hhUuFpjBitVPPNRs",
+  authDomain: "menufacturar-website.firebaseapp.com",
+  projectId: "menufacturar-website",
+  storageBucket: "menufacturar-website.appspot.com",
+  messagingSenderId: "143509777782",
+  appId: "1:143509777782:web:bba67deb3f1188cde1de57",
 };
 
 // Initialize Firebase
