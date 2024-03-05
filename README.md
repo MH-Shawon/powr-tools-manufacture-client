@@ -1,9 +1,9 @@
 # Project Name : Power-Tools - Best tools saling service all over the world.
 
 ### Full Stack Mern Project
-Live Site Link: https://power-tools-92939.web.app/
+Live Site Link: [https://powr-tools-manufacture-client.vercel.app/]
 
-Server Code Link: https://github.com/programming-hero-web-course1/manufacturer-website-server-side-alexakash53
+Server Code Link: [https://power-tools-server.vercel.app/]
 
 ### Application Features
 
